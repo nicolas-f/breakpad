@@ -45,7 +45,6 @@ void setupBreakpad(const string& outputDirectory) {
 	// call TerminateProcess() to prevent any further code from
 	// executing once a minidump file has been written following a
 	// crash.  See ticket #17814
-	TerminateProcess(GetCurrentProcess(), 0);
 #endif
 }
 
